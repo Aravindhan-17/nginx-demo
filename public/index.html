@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple, elegant static blog site.">
+    <title>Minimal Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Minimal<span class="highlight">Blog</span></h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        <section class="hero">
+            <img src="images/banner.png" alt="Beautiful landscape showing a sunset over mountains" class="hero-image">
+            <div class="hero-text">
+                <h2>Welcome to my digital space.</h2>
+                <p>Exploring web development, design, and everything in between.</p>
+            </div>
+        </section>
+
+        <section class="posts-grid">
+            <article class="post-card">
+                <div class="post-image-wrapper">
+                    <img src="images/post-image.png" alt="Modern desk setup with a laptop" class="post-image">
+                </div>
+                <div class="post-content">
+                    <span class="tag">Design</span>
+                    <h3><a href="#">The Art of Minimalist Workspaces</a></h3>
+                    <p class="excerpt">How a clean environment can boost your productivity and mental clarity in the modern era.</p>
+                    <div class="post-meta">
+                        <span class="date">Jul 20, 2026</span>
+                        <span class="read-time">5 min read</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="post-card">
+                <div class="post-image-wrapper">
+                    <img src="images/banner.png" alt="Sunset over mountains" class="post-image">
+                </div>
+                <div class="post-content">
+                    <span class="tag">Lifestyle</span>
+                    <h3><a href="#">Finding Peace in the Outdoors</a></h3>
+                    <p class="excerpt">Disconnecting from technology and reconnecting with nature to find balance.</p>
+                    <div class="post-meta">
+                        <span class="date">Jul 18, 2026</span>
+                        <span class="read-time">7 min read</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2026 MinimalBlog. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  blog-site-1:
+    build: .
+    container_name: static-blog-1
+    environment:
+      - INSTANCE_NAME=Blog Instance 1
+      - HOST_PORT=3001
+    ports:
+      - "3001:3000"
+    restart: unless-stopped
+
+  blog-site-2:
+    build: .
+    container_name: static-blog-2
+    environment:
+      - INSTANCE_NAME=Blog Instance 2
+      - HOST_PORT=3002
+    ports:
+      - "3002:3000"
+    restart: unless-stopped
+
+  blog-site-3:
+    build: .
+    container_name: static-blog-3
+    environment:
+      - INSTANCE_NAME=Blog Instance 3
+      - HOST_PORT=3003
+    ports:
+      - "3003:3000"
+    restart: unless-stopped
