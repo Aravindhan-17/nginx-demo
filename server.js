@@ -7,7 +7,7 @@ const HOST_PORT = process.env.HOST_PORT || PORT;
 const INSTANCE_NAME = process.env.INSTANCE_NAME || 'Local Instance';
 
 // Add a simple route to identify which instance is responding
-app.get('/api/instance', (req, res) => {
+app.get('/api/instance', (_req, res) => {
     res.json({ instance: INSTANCE_NAME });
 });
 
