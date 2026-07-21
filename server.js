@@ -23,3 +23,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(PORT, () => {
     console.log(`${INSTANCE_NAME} is running on http://localhost:${HOST_PORT}`);
 });
+
+
+// **Yesterday:**
+// Worked on implementing the fallback UI for the Lotus Garden Landing Page.
+
+// **Today:**
+// Learning how to configure Nginx for a server, including basic server configuration, reverse proxy setup, and request routing.
+
