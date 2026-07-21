@@ -12,7 +12,7 @@ app.get('/api/instance', (req, res) => {
 });
 
 // Log every request to see which instance handles it
-app.use((req, res, next) => {
+app.use((req, _res, next) => {
     console.log(`[${INSTANCE_NAME}] Serving request: ${req.method} ${req.url}`);
     next();
 });
@@ -23,11 +23,3 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(PORT, () => {
     console.log(`${INSTANCE_NAME} is running on http://localhost:${HOST_PORT}`);
 });
-
-
-// **Yesterday:**
-// Worked on implementing the fallback UI for the Lotus Garden Landing Page.
-
-// **Today:**
-// Learning how to configure Nginx for a server, including basic server configuration, reverse proxy setup, and request routing.
-
