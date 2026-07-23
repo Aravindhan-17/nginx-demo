@@ -1,4 +1,4 @@
-# Nginx Learning Project
+# Nginx Demo Project
 
 This project demonstrates how to set up Nginx as a reverse proxy and load balancer in front of multiple Node.js (Express) applications.
 
